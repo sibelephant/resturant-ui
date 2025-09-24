@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 
 interface PriceInterface {
   price: number;
-  id: number;
   options?:
     | {
         title: string;
@@ -14,7 +13,7 @@ interface PriceInterface {
   desc?: string;
 }
 
-const Price = ({ price, id, options }: PriceInterface) => {
+const Price = ({ price, options }: PriceInterface) => {
   const [total, setTotal] = useState(price);
   const [quantity, setQuantity] = useState(1);
   const [selected, setSelected] = useState(0);
