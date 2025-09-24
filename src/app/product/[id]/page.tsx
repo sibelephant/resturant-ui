@@ -22,11 +22,7 @@ const SingleProductPage = () => {
           {singleProduct.title}
         </h1>
         <p>{singleProduct.desc}</p>
-        <Price
-          price={singleProduct.price}
-          id={singleProduct.id}
-          options={singleProduct.options}
-        />
+        <Price price={singleProduct.price} options={singleProduct.options} />
       </div>
     </div>
   );
